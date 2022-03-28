@@ -1,5 +1,5 @@
 data "template_file" "user_data" {
-  template = file("./terraform-aws-module-apache/userdata.yaml")
+  template = file("${abspath(path.module)}/userdata.yaml")
 }
 
 
