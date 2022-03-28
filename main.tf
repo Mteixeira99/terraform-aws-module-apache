@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 4.8.0"
-    }
-  }
-} 
-
 data "template_file" "user_data" {
   template = file("./terraform-aws-module-apache/userdata.yaml")
 }
